@@ -6,8 +6,7 @@ export default function PageSelection() {
   const [selectedPages, setSelectedPages] = useState<number[]>([]);
   const [isAllSelected, setIsAllSelected] = useState(false);
   const [checkboxStates, setCheckboxStates] = useState<Record<number, string>>({});
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
-
+  
   const pages = [1, 2, 3, 4];
   const selectAnimationStages = ["outlined", "tick1", "tick2", "blue-tick", "blue-bg", ];
   const deselectAnimationStages = ["light-blue", "blue-bg", "blue-tick", "tick2", "tick1", "outlined", "reset"];
